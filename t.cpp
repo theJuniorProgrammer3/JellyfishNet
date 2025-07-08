@@ -47,7 +47,7 @@ void train() {
         return;
     }
 
-    const int window = 25;
+    const int window = 30;
     string line, word;
 
     while (getline(file, line)) {
@@ -63,7 +63,7 @@ void train() {
 
 
         // Sliding window
-const int maxWindow = 25;
+const int maxWindow = 30;
 
 for (size_t i = 0; i < tokens.size(); ++i) {
     for (int w = 1; w <= maxWindow && i + w < tokens.size(); ++w) {
@@ -77,7 +77,7 @@ for (size_t i = 0; i < tokens.size(); ++i) {
 }
 }
     file.close();
-    cout << "Training selesai! Jumlah konteks: " << hasilToOutput.size() << endl;
+    cout << "Training selesai! Jumlah sampel: " << hasilToOutput.size() << endl;
 }
 // === Simpan Model ===
 void saveModel() {

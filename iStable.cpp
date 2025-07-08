@@ -124,10 +124,14 @@ int main() {
     }
     auto newContext = context;
 
-    for(int i = 0; i < 10; i++) {
+    string prediction;
 
-    string prediction = inferNextWord(newContext);
+    int i = 0;
+
+    while(prediction != "[AKHIR]" && i < 50){
+    prediction = inferNextWord(newContext);
     newContext.push_back(prediction);
+    i++;
     }
     cout << "Prediksi kata berikutnya:";
     for(auto m : newContext) {
