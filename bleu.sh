@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INPUT_FILE="input.txt"
-OUTPUT_FILE="output.txt"
+INPUT_FILE="input-bleu.txt"
+OUTPUT_FILE="output-bleu.txt"
 
 # Kosongkan file output
 > "$OUTPUT_FILE"

@@ -4,8 +4,8 @@ def load_file(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return [line.strip().split() for line in f if line.strip()]
 
-ref_lines = load_file('reference.txt')
-out_lines = load_file('output.txt')
+ref_lines = load_file('reference-bleu.txt')
+out_lines = load_file('output-bleu.txt')
 
 assert len(ref_lines) == len(out_lines), "Jumlah baris harus sama!"
 
